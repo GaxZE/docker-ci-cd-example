@@ -19,8 +19,8 @@ jobs:
 
     - name: Docker build
       run: |
-        docker build ./ -t gaxze/node-web-app:1.0.0
+        docker build ./ -t gaxze/node-web-app:0.0.1
     
     - name: Docker push
       run: |
-        docker push gaxze/node-webb-app:1.0.0
+        docker push gaxze/node-webb-app:0.0.1
