@@ -1,0 +1,14 @@
+version: '3'
+services:
+  node-web-app:
+    container_name: node-web-app
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/app:delegated
+      - /app/node_modules
+    ports:
+      - 80:3000
+    environment:
+      NODE_ENV: development
