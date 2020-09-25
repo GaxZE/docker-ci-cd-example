@@ -1,4 +1,4 @@
-const { app } = require('../app');
+const { app } = require('../src/app');
 const request = require('supertest');
 
 beforeAll(() => {
@@ -8,7 +8,7 @@ beforeAll(() => {
 test('get world', async () => {
   const res = await request(app).get('/');
   const response = [
-    { name: 'Gary', id: 1 }
+    { id: 1, name: 'Gary', active: true }
   ]
   expect(res.status).toBe(200);
   expect(res.body).toEqual(response);
