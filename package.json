@@ -4,7 +4,8 @@
   "description": "Docker CI/CD example",
   "main": "app.js",
   "scripts": {
-    "test": "jest --forceExit"
+    "test": "jest --forceExit",
+    "start": "node app.js"
   },
   "author": "Gary Hawes",
   "license": "ISC",
