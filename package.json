@@ -2,10 +2,10 @@
   "name": "docker-ci-cd",
   "version": "1.0.0",
   "description": "Docker CI/CD example",
-  "main": "app.js",
+  "main": "src/app.js",
   "scripts": {
     "test": "jest --forceExit",
-    "start": "node app.js"
+    "start": "nodemon src/app.js"
   },
   "author": "Gary Hawes",
   "license": "ISC",
@@ -21,6 +21,7 @@
   },
   "devDependencies": {
     "jest": "^26.4.2",
+    "nodemon": "^2.0.4",
     "supertest": "^4.0.2"
   }
 }
