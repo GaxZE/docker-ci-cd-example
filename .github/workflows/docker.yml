@@ -17,10 +17,7 @@ jobs:
       run: |
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
 
-    - name: Docker build
+    - name: Docker build and push
       run: |
-        docker build ./ -t gaxze/node-web-app:0.0.1
-    
-    - name: Docker push
-      run: |
-        docker push gaxze/node-webb-app:0.0.1
+        docker build ./ -t gaxze/node-web-app:latest
+        docker push gaxze/node-webb-app:latest
